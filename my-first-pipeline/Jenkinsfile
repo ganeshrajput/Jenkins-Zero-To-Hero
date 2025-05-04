@@ -10,9 +10,10 @@ pipeline {
   }
    post {
         success {
-            echo '✅ Build and deployment succeeded!'
+           sh ' echo "✅ Build and deployment succeeded!"'
         }
         failure {
-            echo '❌ Build or deployment failed.'
+           sh ' echo "❌ Build or deployment failed."'
         }
+   }
 }
